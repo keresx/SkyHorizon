@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #007bff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+
+.login-btn {
+  background: #ff7a00;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+
+
+.search-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: none;
+  padding: 8px;
+}
+
+.search-box button {
+  background: #00a6a6;
+  color: white;
+  border: none;
+  padding: 8px;
+}
+
+
+
+.slideshow-container {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+
+
+.section {
+  padding: 30px;
+}
+
+
+
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+
+
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 15px;
+  width: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+
+
+.card-meta {
+  display: flex;
+  gap: 6px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.card-meta i {
+  color: gold;
+}
+
+.visitors {
+  opacity: 0.8;
+}
+
+.heading {
+  padding: 0 40px;
+}
+.where-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 0 30px; /* 👈 adds space on left & right */
+}
+
+.mini-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mini-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.mini-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.mini-card h4 {
+  margin: 10px;
+}
+
+.mini-card p {
+  margin: 0 10px 10px;
+  color: gray;
+}
+
+@media (min-width: 1200px) {
+  .where-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .where-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
